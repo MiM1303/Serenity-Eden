@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Luxurious Beachfront Villa",
+      "segment_name": "Villa",
+      "description": "Exquisite villa located directly on a pristine beach with stunning ocean views.",
+      "price": "$5,000,000",
+      "status": "sale",
+      "area": "4000 sq ft",
+      "location": "Malibu, California",
+      "facilities": ["Beachfront access", "Infinity pool", "Gourmet kitchen"],
+      "image_url": "https://i.ibb.co/S3gJs2h/1.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Private Island Retreat",
+      "segment_name": "Private Island",
+      "description": "Your own secluded island paradise complete with luxury accommodations.",
+      "price": "$10,000,000",
+      "status": "sale",
+      "area": "10 acres",
+      "location": "Caribbean Sea",
+      "facilities": ["Private beach", "Spa facilities", "Helipad"],
+      "image_url": "https://i.ibb.co/RcbjcXq/2.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Modern Penthouse",
+      "segment_name": "Penthouse",
+      "description": "Contemporary penthouse offering panoramic city views and upscale amenities.",
+      "price": "$2,500,000",
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "Manhattan, New York",
+      "facilities": ["Floor-to-ceiling windows", "Rooftop terrace", "Fitness center"],
+      "image_url": "https://i.ibb.co/jVDwGsg/3.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Luxury Resort",
+      "segment_name": "Resort",
+      "description": "Exclusive resort offering premium accommodations and world-class amenities.",
+      "price": "$20,000,000",
+      "status": "sale",
+      "area": "20 acres",
+      "location": "Maui, Hawaii",
+      "facilities": ["Private villas", "Spa & wellness center", "Multiple restaurants"],
+      "image_url": "https://i.ibb.co/xGjvjNv/4.jpg"
+    },
+    {
+      "id": 5,
+      "estate_title": "Seaside Retreat",
+      "segment_name": "Beachfront Property",
+      "description": "Serene beachfront property ideal for relaxation and entertainment.",
+      "price": "$3,500,000",
+      "status": "sale",
+      "area": "2500 sq ft",
+      "location": "Miami, Florida",
+      "facilities": ["Private beach access", "Outdoor pool", "Media room"],
+      "image_url": "https://i.ibb.co/7nYHr8H/5.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Forest Retreat",
+      "segment_name": "Retreat",
+      "description": "Enchanting forest retreat surrounded by pristine wilderness and natural beauty.",
+      "price": "$1,800,000",
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "Redwood National Park, California",
+      "facilities": ["Secluded location", "Hiking trails", "Outdoor fireplace"],
+      "image_url": "https://i.ibb.co/qMyH1v9/6.jpg"
+    }
+  ]
+  

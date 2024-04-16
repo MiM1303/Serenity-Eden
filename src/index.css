@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* li a:hover{
+    background-color: red;
+} */
+/* .navbar li a:active{
+    background-color: red !important;
+} */
