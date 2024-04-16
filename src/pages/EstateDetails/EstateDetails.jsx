@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const EstateDetails = () => {
     // const [estateStatus, setEstateStatus] = useState(true);
@@ -40,7 +41,7 @@ const EstateDetails = () => {
                         <p className='text-lg lg:text-xl'><span className='font-bold '>Status:</span> {status}</p>
                         <p className='text-lg lg:text-xl'><span className='font-bold '>Price:</span> {price}</p>
                     </div>
-                    <button className='hover:bg-[#99c24d] btn w-full  bg-[#196680] text-white text-xl font-medium pb-10 pt-5 flex items-center justify-center'>Book</button>
+                    <Link to={`/estate-details/${id}/book`}><button className='hover:bg-[#99c24d] btn w-full  bg-[#196680] text-white text-xl font-medium pb-10 pt-5 flex items-center justify-center'>Book</button></Link>
                     </div>
                 </div>
             </div>
