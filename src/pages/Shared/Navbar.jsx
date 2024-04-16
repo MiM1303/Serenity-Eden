@@ -1,9 +1,20 @@
 import { NavLink } from "react-router-dom";
 import { GiHummingbird } from "react-icons/gi";
 import "../../App.css"
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 
 const Navbar = () => {
+
+    const {user, logOut} = useContext(AuthContext)
+    
+    const signOutUser = () => {
+        logOut()
+        .then(()=>{})
+        .catch(()=>{})
+    }
 
     const navLinks = <>
         <li className="font-medium font-3xl text-white"><NavLink to="/">Home</NavLink></li>
@@ -31,12 +42,26 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn border-none p-2 text-sm bg-[#2e4057] text-white">Button</a>
-                </div>
+                
+                    {user? 
+                    <div className="navbar-end">
+                    <div tabIndex={0} className="flex gap-4 ">
+                        <div className="tooltip" data-tip={user.displayName}>
+                        <img alt="Tailwind CSS Navbar component" className=" w-12 rounded-full btn btn-ghost btn-circle avatar" src={user.photoURL}  />
+                        </div>
+                        <button onClick={signOutUser} className="btn hover:bg-[#99c24d] border-none p-3 text-sm bg-[#2e4057] text-white">Log Out</button>
+                    </div>
+                    </div>
+                    :
+                    <div className="navbar-end ">
+                        <Link to={'/login'} className="hover:bg-[#99c24d] p-3 btn border-none text-sm bg-[#2e4057] text-white">Log In</Link>
+                    </div>
+                    }
+                
             </div>
         </div>
     );
+    // <a className="btn border-none p-2 text-sm bg-[#2e4057] text-white">Button</a>
 };
 
 export default Navbar;
