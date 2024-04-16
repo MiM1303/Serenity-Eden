@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form"
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
@@ -11,6 +11,9 @@ import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
 
     const {signIn, googleSignIn, githubSignIn} = useContext(AuthContext);
+    const location = useLocation();
+    console.log('Location in the login page',location);
+    const navigate = useNavigate();
 
     const {
         register,
@@ -27,7 +30,7 @@ const Login = () => {
             console.log(result.user);
 
             // navigate after login
-            // navigate(location?.state ? location.state : '/');
+            navigate(location?.state ? location.state : '/');
         })
         .catch(error=>{
             console.error(error);
@@ -37,7 +40,12 @@ const Login = () => {
 
     const googleLogin = ()=>{
         googleSignIn()
-        .then()
+        .then(result=>{
+            console.log(result.user);
+
+            // navigate after login
+            navigate(location?.state ? location.state : '/');
+        })
         .catch(error=>{
             toast.error("Email and Password did not match! Please try again!!")
         })
@@ -45,7 +53,12 @@ const Login = () => {
 
     const githubLogin = ()=>{
         githubSignIn()
-        .then()
+        .then(result=>{
+            console.log(result.user);
+            
+            // navigate after login
+            navigate(location?.state ? location.state : '/');
+        })
         .catch(toast.error("Email and Password did not match! Please try again!!"))
     }
 

@@ -1,6 +1,7 @@
 import { MdLocationPin } from "react-icons/md";
 import { FaDollarSign } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 
 const Estate = ({estate}) => {
@@ -16,14 +17,16 @@ const Estate = ({estate}) => {
                     <p className="text-lg flex items-center gap-2"><FaDollarSign className="text-green-700 text-2xl" />{price}</p>
                     
                     <div>
-                        {/* {
+                        {
                             facilities.map(facility =>
-                                <span key={id} className="p-2 bg-base-300">{facility}</span>
+                                <span key={id} className="grid grid-cols-1 mb-3 w-fit  bg-[#C3E681] rounded-xl shadow-md py-1 px-3">{facility}</span>
                             )
-                        } */}
+                        }
                     </div>
                     <div className="card-actions justify-end">
-                        <button className="btn bg-[#99c24d] text-white text-lg">View Property</button>
+                        <Link to={`/estate-details/${id}`}>
+                            <button className="btn bg-[#99c24d] text-white text-lg">View Property</button>
+                        </Link>
                     </div>
                     
                 </div>
