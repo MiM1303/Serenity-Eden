@@ -11,7 +11,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="">
+        <div className="mb-6 md:mb-8 lg:mb-12">
             <div className="navbar p-6 bg-gradient-to-r from-[#2e4057] via-[#196680] to-[#048ba8] rounded-xl">
                 <div className="navbar-start">
                     <div className="dropdown">
