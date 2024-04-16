@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const EstateDetails = () => {
     // const [estateStatus, setEstateStatus] = useState(true);
@@ -21,6 +22,9 @@ const EstateDetails = () => {
     // console.log(estate_title);
     return (
         <div>
+            <Helmet>
+                <title>Serenity Eden | Estate Details-{id}</title>
+            </Helmet>
             <div className="mx-2 lg:mx-10">
                 <div className="flex justify-center items-center flex-col gap-10 lg:flex-row">
                     <img src={image_url} className=" rounded-lg shadow-2xl" />

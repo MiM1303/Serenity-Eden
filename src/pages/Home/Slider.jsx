@@ -4,16 +4,28 @@ import { SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/navigation";
+import 'swiper/css/pagination';
 import "swiper/css/autoplay";
 
-import { Navigation } from 'swiper/modules';
+import {  Autoplay, Pagination, Navigation } from 'swiper/modules';
 import "../../App.css"
 
 
 const Slider = () => {
     return (
         <div>
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper z-0">
+            <Swiper spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper z-0">
                 <SwiperSlide>
                     <div className="slide slide1 flex items-center justify-center">
                         <h2 className="text-center text-base-300 leading-loose font-extrabold text-xl lg:text-3xl">Escape to scenic places for a vacation or a permanent residence! <br />

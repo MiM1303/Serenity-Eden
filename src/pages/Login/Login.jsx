@@ -6,6 +6,7 @@ import { AiFillGoogleCircle } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -55,7 +56,7 @@ const Login = () => {
         githubSignIn()
         .then(result=>{
             console.log(result.user);
-            
+
             // navigate after login
             navigate(location?.state ? location.state : '/');
         })
@@ -64,6 +65,9 @@ const Login = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Serenity Eden | Login</title>
+            </Helmet>
             <ToastContainer />
             <h2 className="text-center text-2xl font-semibold text-[#442537]">Please Login!</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">

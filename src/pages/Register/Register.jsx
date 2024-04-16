@@ -5,6 +5,7 @@ import { AuthContext } from "../providers/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -50,6 +51,9 @@ const Register = () => {
 
     return (
         <div className="">
+            <Helmet>
+                <title>Serenity Eden | Register</title>
+            </Helmet>
             <ToastContainer />
             <h2 className="text-center text-2xl font-semibold text-[#442537]">Register Now!</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="mx-auto w-3/5 card-body text-2xl">

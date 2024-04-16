@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useForm } from "react-hook-form"
+import { Helmet } from "react-helmet-async";
 
 const Book = () => {
     const properties = useLoaderData();
@@ -19,6 +20,9 @@ const Book = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Serenity Eden | Book Estate:{id}</title>
+            </Helmet>
             <ToastContainer />
             <div className="md:mx-6 lg:mx-10">
                 <div className="flex flex-col lg:flex-row gap-4 md:gap-10 lg:gap-14 md:mt-16 mt-8">
