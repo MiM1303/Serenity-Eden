@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { GiHummingbird } from "react-icons/gi";
+import "../../App.css"
 
 
 const Navbar = () => {
@@ -22,7 +24,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                     </div>
-                    <a className="btn btn-ghost font-exo2 font-semibold text-xl lg:text-3xl text-white">Serenity Eden</a>
+                    <a className="flex items-center justify-center btn btn-ghost font-exo2 font-semibold text-xl lg:text-3xl text-white">Serenity Eden <GiHummingbird className="text-4xl font-semibold text-[#2CB1CF]"/></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

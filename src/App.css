@@ -23,3 +23,10 @@
 .slide4{
     background-image: url('./assets/cover4.jpg');
 }
+
+.navbar a:hover{
+    background-color: #99c24d;
+}
+.navbar a:active{
+    background-color: #408c7f;
+}

@@ -1,5 +1,4 @@
 import { useLoaderData } from "react-router-dom";
-import Navbar from "../Shared/Navbar";
 import Slider from "./Slider";
 import Estate from "./Estate";
 
@@ -9,7 +8,6 @@ const Home = () => {
     console.log(estates)
     return (
         <div>
-            <Navbar></Navbar>
             <Slider></Slider>
             <div className="text-center mt-10 mb-10 lg:mt-12">
                 <h2 className="mb-4 text-2xl md:text-3xl lg:text-4xl font-semibold text-[#264369]">Our Estates</h2>
@@ -22,7 +20,6 @@ const Home = () => {
                         estates.map(estate => <Estate key={estate.id} estate={estate}></Estate>)
                     }
             </div>
-
         </div>
     );
 };

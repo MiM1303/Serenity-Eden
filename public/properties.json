@@ -25,15 +25,15 @@
     },
     {
       "id": 3,
-      "estate_title": "Modern Penthouse",
-      "segment_name": "Penthouse",
-      "description": "Contemporary penthouse offering panoramic city views and upscale amenities.",
-      "price": "$2,500,000",
+      "estate_title": "Forest Retreat",
+      "segment_name": "Retreat",
+      "description": "Enchanting forest retreat surrounded by pristine wilderness and natural beauty.",
+      "price": "$1,800,000",
       "status": "sale",
       "area": "3000 sq ft",
-      "location": "Manhattan, New York",
-      "facilities": ["Floor-to-ceiling windows", "Rooftop terrace", "Fitness center"],
-      "image_url": "https://i.ibb.co/jVDwGsg/3.jpg"
+      "location": "Redwood National Park, California",
+      "facilities": ["Secluded location", "Hiking trails", "Outdoor fireplace"],
+      "image_url": "https://i.ibb.co/qMyH1v9/6.jpg"
     },
     {
       "id": 4,
@@ -61,15 +61,15 @@
     },
     {
       "id": 6,
-      "estate_title": "Forest Retreat",
-      "segment_name": "Retreat",
-      "description": "Enchanting forest retreat surrounded by pristine wilderness and natural beauty.",
-      "price": "$1,800,000",
+      "estate_title": "Modern Penthouse",
+      "segment_name": "Penthouse",
+      "description": "Contemporary penthouse offering panoramic city views and upscale amenities.",
+      "price": "$2,500,000",
       "status": "sale",
       "area": "3000 sq ft",
-      "location": "Redwood National Park, California",
-      "facilities": ["Secluded location", "Hiking trails", "Outdoor fireplace"],
-      "image_url": "https://i.ibb.co/qMyH1v9/6.jpg"
+      "location": "Manhattan, New York",
+      "facilities": ["Floor-to-ceiling windows", "Rooftop terrace", "Fitness center"],
+      "image_url": "https://i.ibb.co/jVDwGsg/3.jpg"
     }
   ]
   
