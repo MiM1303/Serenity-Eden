@@ -20,7 +20,7 @@ const Navbar = () => {
         <li className="font-medium font-3xl text-white"><NavLink to="/">Home</NavLink></li>
         <li className="font-medium font-3xl text-white"><NavLink to="/login">Login</NavLink></li>
         <li className="font-medium font-3xl text-white"><NavLink to="/register">Register</NavLink></li>
-        <li className="font-medium font-3xl text-white"><NavLink to="/update-profile">Update Profile</NavLink></li>
+        {user && <li className="font-medium font-3xl text-white"><NavLink to="/update-profile">Update Profile</NavLink></li>}
 
     </>
 
