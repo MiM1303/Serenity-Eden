@@ -13,7 +13,7 @@ import "../../App.css"
 
 const Slider = () => {
     return (
-        <div>
+        <div className="mb-16">
             <Swiper spaceBetween={30}
         centeredSlides={true}
         autoplay={{

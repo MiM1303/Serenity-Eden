@@ -14,7 +14,7 @@ const Reviews = () => {
     },[]);
     console.log(reviews);
     return (
-        <div className="flex flex-col justify-center items-center mb-16">
+        <div className="flex flex-col mt-4 md:mt-14 lg:mt-16 justify-center items-center mb-16">
             <div className="text-center mt-16 mb-10 lg:mt-12">
                     <h2 className="mb-4 text-xl md:text-2xl lg:text-4xl font-semibold text-[#264369]">Customer Reviews</h2>
                     <p className="w-10/12 md:w-10/12 lg:w-3/4 md:text-lg lg:text-xl font-normal text-[#196680] mx-auto">Swipe to see some reviews from our esteemed customers</p>
