@@ -19,7 +19,6 @@ const AuthProvider = ({children}) => {
     }
 
     const logOut = () =>{
-        setLoading(true);
         return signOut(auth);
     }
 
@@ -42,6 +41,7 @@ const AuthProvider = ({children}) => {
     const googleProvider = new GoogleAuthProvider();
 
     const googleSignIn = ()=>{
+        setLoading(true);
         return signInWithPopup(auth, googleProvider)
         .then(result=>{
             console.log(result.user)
@@ -55,6 +55,7 @@ const AuthProvider = ({children}) => {
     const githubProvider = new GithubAuthProvider();
 
     const githubSignIn = ()=>{
+        setLoading(true);
         return signInWithPopup(auth, githubProvider)
         .then(result=>{
             console.log(result.user)

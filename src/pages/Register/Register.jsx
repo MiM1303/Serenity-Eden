@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet-async";
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);
 
-    const {createUser, updateUserInfo} = useContext(AuthContext);    
+    const {createUser, updateUserInfo, setUser} = useContext(AuthContext);    
 
     const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
     const {
@@ -36,7 +36,14 @@ const Register = () => {
         createUser(email, password)
         .then(result =>{
             console.log(result.user);
-            updateUserInfo(name, photo);
+            updateUserInfo(name, photo)
+            .then(()=>{
+                setUser({
+                    displayName: name,
+                    photoURL: photo,
+                    email: email
+                })
+            })
             console.log(data);
             toast.success("Successfully Registered!");
         })

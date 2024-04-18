@@ -1,0 +1,45 @@
+[
+    {
+      "id":1,
+      "name": "Alice Johnson",
+      "user_img_url": "https://example.com/user1.jpg",
+      "review": "We rented a beachfront villa for our vacation and had an incredible experience. The villa was luxurious with stunning ocean views. Highly recommended!",
+      "rating": 5
+    },
+    {
+      "id":2,
+      "name": "John Smith",
+      "user_img_url": "https://example.com/user2.jpg",
+      "review": "Our family bought a modern penthouse in Manhattan, and we love the city views and upscale amenities. This property exceeded our expectations.",
+      "rating": 4.5
+    },
+    {
+      "id":3,
+      "name": "Emily Brown",
+      "user_img_url": "https://example.com/user3.jpg",
+      "review": "Staying at the private island retreat was a dream come true! The secluded paradise and luxurious accommodations made our vacation unforgettable.",
+      "rating": 5
+    },
+    {
+      "id":4,
+      "name": "David Lee",
+      "user_img_url": "https://example.com/user4.jpg",
+      "review": "We purchased a grand mansion in Beverly Hills, and it's truly a masterpiece. The lavish interiors and sprawling grounds make us feel like royalty.",
+      "rating": 4.8
+    },
+    {
+        "id":5,
+      "name": "Sophia Adams",
+      "user_img_url": "https://example.com/user5.jpg",
+      "review": "Our stay at the luxury resort in Maui was magical. The private villas and spa facilities offered a perfect blend of relaxation and indulgence.",
+      "rating": 4.7
+    },
+    {
+        "id":6,
+        "name": "Olivia Parker",
+        "user_img_url": "https://example.com/user6.jpg",
+        "review": "Our family stayed at the seaside retreat in Miami, and it was perfect for relaxation. The private beach access and outdoor pool were highlights of our vacation.",
+        "rating": 4.9
+    }
+  ]
+  

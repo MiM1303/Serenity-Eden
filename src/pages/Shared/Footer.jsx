@@ -3,6 +3,35 @@ import { GiHummingbird } from "react-icons/gi";
 const Footer = () => {
     return (
         <div>
+            {/* <footer className="flex  justify-center gap-20 mt-6 md:mt-8 lg:mt-12 footer footer-center p-20 bg-gradient-to-b from-[#0f7994] from-10% via-[#196680] via-30% to-[#2e4057] text-primary-content ">
+                <aside className="">
+                    <GiHummingbird  className="text-[#2CB1CF] text-6xl font-semibold"/>
+                    <p className="font-bold text-xl text-left">
+                    Serenity Eden <br/>Providing reliable real estates since 2000
+                    </p> 
+                    <p className="text-base text-left">Copyright © 2024 - All right reserved</p>
+                </aside> 
+                <nav className="text-base font-medium ">
+                    <h6 className="footer-title">Services</h6> 
+                    <a className="link link-hover">Branding</a>
+                    <a className="link link-hover">Design</a>
+                    <a className="link link-hover">Marketing</a>
+                    <a className="link link-hover">Advertisement</a>
+                </nav> 
+                <nav className="text-base font-medium ">
+                    <h6 className="footer-title">Company</h6> 
+                    <a className="link link-hover">About us</a>
+                    <a className="link link-hover">Contact</a>
+                    <a className="link link-hover">Jobs</a>
+                    <a className="link link-hover">Press kit</a>
+                </nav> 
+                <nav className="text-base font-medium ">
+                    <h6 className="footer-title">Legal</h6> 
+                    <a className="link link-hover">Terms of use</a>
+                    <a className="link link-hover">Privacy policy</a>
+                    <a className="link link-hover">Cookie policy</a>
+                </nav>
+            </footer> */}
             <footer className="mt-6 md:mt-8 lg:mt-12 footer footer-center p-10 bg-gradient-to-b from-[#0f7994] from-10% via-[#196680] via-30% to-[#2e4057] text-primary-content">
                 <aside>
                     <GiHummingbird  className="text-[#2CB1CF] text-6xl font-semibold"/>

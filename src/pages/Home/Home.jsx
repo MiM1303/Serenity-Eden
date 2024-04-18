@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Slider from "./Slider";
 import Estate from "./Estate";
 import { Helmet } from "react-helmet-async";
+import Reviews from "./Reviews";
 
 
 import "leaflet/dist/leaflet.css";
@@ -38,7 +39,8 @@ const Home = () => {
                 <div className="text-center mt-16 mb-10 lg:mt-12">
                     <h2 className="mb-4 text-2xl md:text-3xl lg:text-4xl font-semibold text-[#264369]">Our Location</h2>
                 </div>
-                <div className="">
+                <div>
+                <div className="flex flex-col lg:flex-row">
                     <MapContainer className="  h-[300px] md:h-[500px] lg:w-[800px] lg:h-[600px]" center={position} zoom={10} scrollWheelZoom={false}>
                         <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -52,7 +54,14 @@ const Home = () => {
                     </MapContainer>
                     </div>
                 </div>
+                <div>
+
+                </div>
             </div>
+
+            {/* Reviews */}
+            <Reviews></Reviews>
+        </div>
         
     );
 };

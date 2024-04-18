@@ -46,10 +46,9 @@ const Login = () => {
 
             // navigate after login
             navigate(location?.state ? location.state : '/');
+            toast.success("Logged in successfully");
         })
-        .catch(error=>{
-            toast.error("Email and Password did not match! Please try again!!")
-        })
+        
     }
 
     const githubLogin = ()=>{
