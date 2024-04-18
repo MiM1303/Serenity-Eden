@@ -11,21 +11,8 @@
     border-radius: 25px;
 }
 
-.slide1{
-    background-image: url('./assets/cover1.jpg');
-}
-.slide2{
-    background-image: url('./assets/cover2.jpg');
-}
-.slide3{
-    background-image: url('./assets/cover3.jpg');
-}
-.slide4{
-    background-image: url('./assets/cover4.jpg');
-}
-
 .navbar a:hover{
-    background-color: #99c24d;
+    background-color: #50a9af;
 }
 .navbar a:active{
     background-color: #408c7f;

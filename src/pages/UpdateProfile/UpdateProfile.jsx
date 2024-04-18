@@ -28,7 +28,7 @@ const UpdateProfile = () => {
 
 
     return (
-        <div className="">
+        <div className="mt-16">
             <Helmet>
                 <title>Serenity Eden | Register</title>
             </Helmet>
@@ -54,7 +54,7 @@ const UpdateProfile = () => {
                 <input type="email" value={user.email} className="input input-bordered" {...register("email", { required: true })} />
                 </div>
                 <div className="form-control mt-6">
-                <button className="btn bg-[#196680] text-white text-xl font-medium pb-10 pt-5 flex items-center justify-center">Update</button>
+                <button className="btn bg-[#196680] text-white text-base lg:text-xl font-medium pb-10 pt-5 flex items-center justify-center hover:bg-[#50a9af]">Update</button>
                 </div>
             </form>
         </div>

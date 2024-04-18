@@ -14,15 +14,15 @@ const Reviews = () => {
     },[]);
     console.log(reviews);
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center mb-16">
             <div className="text-center mt-16 mb-10 lg:mt-12">
-                    <h2 className="mb-4 text-2xl md:text-3xl lg:text-4xl font-semibold text-[#264369]">Customer Reviews</h2>
-                    <p className="w-10/12 md:w-10/12 lg:w-3/4 text-xl font-normal text-[#196680] mx-auto">Slide to see some reviews from our esteemed customers</p>
+                    <h2 className="mb-4 text-xl md:text-2xl lg:text-4xl font-semibold text-[#264369]">Customer Reviews</h2>
+                    <p className="w-10/12 md:w-10/12 lg:w-3/4 md:text-lg lg:text-xl font-normal text-[#196680] mx-auto">Swipe to see some reviews from our esteemed customers</p>
             </div>
-            <div className="lg:carousel md:carousel carousel-center w-full p-4 space-x-4 bg-neutral rounded-box hidden ">
+            <div className="lg:carousel md:carousel carousel-center w-full p-4 space-x-4 rounded-box hidden bg-[#24536c] ">
             {/* LARGE DEVICE */}
                 {
-                    reviews.map(rev=> <div key={rev.id} className="carousel-item w-[568px] rounded-box flex flex-col gap-6 text-center p-20 bg-gradient-to-b from-[#e2f0ca] to-[#e2edfa]"> 
+                    reviews.map(rev=> <div key={rev.id} className="carousel-item md:w-[545px] lg:w-[568px] rounded-box flex flex-col gap-6 text-center p-20 bg-gradient-to-b from-[#caf0e0] to-[#bedef4]"> 
                     <FaUserCircle className="mx-auto text-5xl"></FaUserCircle>
                     <h2 className="text-2xl font-semibold text-[#275590]">{rev.name}</h2>
                     <p className="text-xl leading-relaxed"><span className="text-2xl font-bold">"</span>{rev.review}<span className="text-2xl font-bold">"</span></p> </div> )

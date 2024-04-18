@@ -86,7 +86,7 @@ const AuthProvider = ({children}) => {
         updateUserInfo,
         googleSignIn,
         githubSignIn,
-        
+        setUser,
     }
 
     return (

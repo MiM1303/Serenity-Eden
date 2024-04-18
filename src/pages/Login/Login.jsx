@@ -58,8 +58,9 @@ const Login = () => {
 
             // navigate after login
             navigate(location?.state ? location.state : '/');
+            toast.success("Logged in successfully");
         })
-        .catch(toast.error("Email and Password did not match! Please try again!!"))
+        .catch()
     }
 
     return (
@@ -68,37 +69,37 @@ const Login = () => {
                 <title>Serenity Eden | Login</title>
             </Helmet>
             <ToastContainer />
-            <h2 className="text-center text-2xl font-semibold text-[#442537]">Please Login!</h2>
+            <h2 className="text-center mt-16 lg:text-3xl text-2xl font-semibold text-[#442537]">Please Login!</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                 <div className="form-control">
                 <label className="label">
-                    <span className="label-text">Email</span>
+                    <span className="text-base lg:text-lg label-text">Email</span>
                 </label>
                 <input type="email" placeholder="email" className="input input-bordered" {...register("email", { required: true })} />
                 </div>
                 <div className="form-control">
                 <label className="label">
-                    <span className="label-text">Password</span>
+                    <span className="text-base lg:text-lg label-text">Password</span>
                 </label>
                 <input type="password" placeholder="password" className="input input-bordered" {...register("password", { required: true })} />
                 <label className="label">
-                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                    <a href="#" className="label-text-alt link link-hover text-sm mt-2">Forgot password?</a>
                 </label>
                 </div>
                 <div className="form-control mt-6">
-                <button className="btn bg-[#196680] text-white text-xl font-medium pb-10 pt-5 flex items-center justify-center">Login</button>
+                <button className="btn bg-[#196680] text-white text-base hover:bg-[#50a9af] lg:text-xl font-medium pb-10 pt-5 flex items-center justify-center">Login</button>
                 </div>
             </form>
-            <p className="text-center text-xl">Do not have an account?
+            <p className="text-center mx-6 text-base lg:text-xl">Do not have an account?
                 <Link className="text-blue-700 font-semibold " to="/register"> Register Here!</Link>
             </p>
             <div className="text-center mt-12  border-b-2 w-fit mx-auto py-4 px-10 rounded-2xl shadow-sm">
-                <h2 className="mb-4 text-xl">Login with:</h2>
+                <h2 className="mb-4 text-base md:text-lg lg:text-xl">Login with:</h2>
                 <div className="flex gap-6 justify-center">
                     <button><AiFillGoogleCircle 
-                        onClick={googleLogin} className="text-red-600 text-5xl"/></button>
+                        onClick={googleLogin} className="text-red-600 text-4xl lg:text-5xl"/></button>
                     <button><FaGithub 
-                        onClick={githubLogin} className="text-[#2e4057] text-5xl"/></button>
+                        onClick={githubLogin} className="text-[#2e4057] text-4xl lg:text-5xl"/></button>
                 </div>
             </div>
         </div>

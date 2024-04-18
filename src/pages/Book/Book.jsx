@@ -28,9 +28,9 @@ const Book = () => {
                 <div className="flex flex-col justify-center lg:flex-row gap-4 md:gap-10 lg:gap-10 md:mt-16 mt-8">
                     {/* estate details */}
                     
-                        <img src={image_url} alt="" className="opacity-75 relative rounded-xl w-1/2" />
-                        <div className="absolute top-44 left-8 md:top-72 md:left-28 lg:top-96 lg:left-96 text-[#2e4057] text-center">
-                            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold">{estate_title}</h1>
+                        <img src={image_url} alt="" className="opacity-75 relative rounded-xl lg:w-1/2" />
+                        <div className="absolute top-48 left-10 md:top-72 md:left-28 lg:top-96 lg:left-96 text-[#2e4057] text-center">
+                            <h1 className="text-xl md:text-4xl lg:text-5xl font-bold">{estate_title}</h1>
                             <p className="py-1 lg:py-6 text-lg md:text-2xl lg:text-2xl font-bold">In {location}</p>
                             <p className="py-1 lg:py-6 text-lg md:text-2xl lg:text-2xl font-bold">For {status}</p>
                             <p className="py-1 lg:py-6 text-lg md:text-3xl lg:text-3xl font-bold">Only at <span className="underline">{price}!</span></p>

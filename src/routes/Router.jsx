@@ -8,6 +8,8 @@ import EstateDetails from "../pages/EstateDetails/EstateDetails";
 import PrivateRoute from "./PrivateRoute";
 import Book from "../pages/Book/Book";
 import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
+import Profile from "../pages/Profile/Profile";
+
 // import Reviews from "../pages/Home/Reviews";
 
 const router = createBrowserRouter([
@@ -42,6 +44,10 @@ const router = createBrowserRouter([
             {
                 path: "/update-profile",
                 element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>,
+            },
+            {
+                path: "/profile",
+                element: <PrivateRoute><Profile></Profile></PrivateRoute>,
             },
             // {
             //     path: "/",
